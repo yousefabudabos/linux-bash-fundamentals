@@ -26,4 +26,17 @@ echo "--- Running Services ---"
 service --status-all 2>/dev/null | grep -c '\[ + \]' | xargs -I{} echo "Active services: {}"
 
 echo ""
+echo "--- Current User ---"
+whoami
+
+echo ""
+echo "--- Date & Time"
+date 
+
+echo ""
+echo "--- Hostname ---"
+hostname
+
+
+echo ""
 echo "==============================="
