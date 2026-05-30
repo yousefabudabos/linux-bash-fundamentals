@@ -92,3 +92,12 @@ sudo service nginx status/start/stop
   "Resource": "arn:aws:s3:::bucket-name or *"
 }
 \`\`\`
+
+
+### S3 Bucket
+- Create a s3 bucket
+- Add bucket policy so anyone can access the website
+- Connect aws with my linux os with awscli
+- Copying first simple website to s3 bucket
+- Upload the website to static web hosting
+
