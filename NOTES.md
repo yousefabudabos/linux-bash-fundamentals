@@ -66,3 +66,29 @@ ss -tulpn | grep :80     # Check Port
 tail -f /var/log/nginx/access.log  # Monitoring Log
 sudo service nginx status/start/stop
 \`\`\`
+
+
+---
+
+## Week 2 — AWS IAM
+
+### Key Concepts
+- IAM User: للبشر — Username وPassword وMFA
+- IAM Group: لإدارة صلاحيات مجموعة من الـ Users
+- IAM Role: للخدمات — صلاحيات مؤقتة بدون Credentials
+- IAM Policy: JSON يحدد Allow/Deny على Actions وResources
+
+### Golden Rules
+- لا تستخدم Root Account يومياً
+- لا تضع Access Keys في الكود أبداً
+- Explicit Deny يلغي كل Allow
+- دائماً Least Privilege
+
+### Policy Structure
+\`\`\`json
+{
+  "Effect": "Allow or Deny",
+  "Action": "s3:GetObject or *",
+  "Resource": "arn:aws:s3:::bucket-name or *"
+}
+\`\`\`
