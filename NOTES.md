@@ -101,3 +101,9 @@ sudo service nginx status/start/stop
 - Copying first simple website to s3 bucket
 - Upload the website to static web hosting
 
+
+## Cloudfront - AWS
+- Deploying a cloudfront distribution (free https) for the website
+- S3 Access control
+- understand Defense in path
+
